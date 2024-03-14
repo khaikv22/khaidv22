@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PortFolio</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Boxicons CSS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/2826a00627.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+	<nav id="desktop-nav"></nav>
+	<div class="hero">
+		<div class="nav">
+			<div class="logo">
+				<h2>YOUNG K</h2>
+			</div>
+			<div class="link">
+				<ul>
+					<li><a class="active" onclick="openAbout()">Home</a></li>
+					<li><a href="#portfolio">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+					<i class="fa-solid fa-xmark"></i>
+					
+				</ul>
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="main">
+			<img src="img/main01.jpg" alt="men" class="men">
+			<div class="main-detil">
+				<p>Welcome to my porfolio</p>
+				<h1>Hello I'm <span>YOUNG K</span></h1>
+				<h4>UX/UI and Product Designer</h4>
+
+				<div class="btn">
+					<button type="submit">Download CV</button>
+					<button type="submit" class="btn-2">Hire Me</button>
+				</div>
+
+				<div class="social">
+					<i class='bx bxl-behance'></i>
+					<i class='bx bxl-instagram'></i>
+					<i class='bx bxl-facebook'></i>
+					<i class='bx bxl-gmail'></i>
+				</div>
+			</div>
+		</div>
+
+		<!-- <section id="about"> -->
+		<div class="main">
+			<img src="img/main02.jpg" alt="men" class="men">
+
+			<div class="about-col-2" id="about">
+				<h1 class="sub-title">About Me</h1>
+				<P1> I'm YoungK, a graphic designer with over 6 years of experience in the industry. Graduating in
+					Graphic Design at FPT University, I am equipped with solid professional knowledge of design,
+					proficient in
+					using design software such as Adobe Photoshop, Illustrator, InDesign.
+					With passion and enthusiasm for the profession, I always want to bring creative, unique and
+					effective products to customers.</P1>
+
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')"> Skill</p>
+					<p class="tab-links" onclick="opentab('experience')"> Experience</p>
+					<p class="tab-links" onclick="opentab('education')"> Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+						<li><span>Web Development</span><br>Web app Development</li>
+						<li><span>App Development</span><br>Building Android/iOS apps</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>2021-Current</span><br>UI/UX Design at FPT University</li>
+						<li><span>2019-2021</span><br>Arena Multimedia </li>
+						<li><span>2021-2022</span><br>Graphic Designer at Skyward Company</li>
+					</ul>
+				</div>
+
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2020</span><br>UI/UX Design at FPT University</li>
+						<li><span>2017</span><br>Arena Multimedia</li>
+						<li><span>2019</span><br>GreanWhich</li>
+					</ul>
+				</div>
+
+				<!-------------------services---------- --->
+
+
+			</div>
+		</div>
+		<!-- </section> -->
+
+
+
+</body>
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	var aboutElement = document.getElementById("about");
+
+
+	function opentab(tabname) {
+		for (tablink of tablinks) {
+			tablink.classList.remove("active-link");
+		}
+		for (tabcontent of tabcontents) {
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+	function openAbout(params) {
+		console.log(aboutElement);
+		console.log(123456);
+		aboutElement.scrollIntoView();
+
+	}
+
+</script>
+
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-laptop" style="color: #ffffff;"></i>
+				<h2>Web Design</h2>
+				<P> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</P>
+				<a href="#">learn more</a>
+			</div>
+
+			<div>
+				<i class="fa-solid fa-palette" style="color: #ffffff;"></i>
+				<h2>Graphic Design</h2>
+				<P> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					geMaker including versions of Lorem Ipsum.</P>
+				<a href="#">learn more</a>
+			</div>
+
+			<div>
+				<i class="fa-solid fa-camera" style="color: #ffffff;"></i>
+				<h2>Photographer</h2>
+				<P> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					ublishing software like Aldus PageMaker including versions of Lorem Ipsum.</P>
+				<a href="#">learn more</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-------------------portfolio-->
+<div id="porfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="img/Anh san pham/06.jpg">
+				<div class="layer">
+					<h3>Social Media Spa</h3>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </P>
+					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="img/Anh san pham/01.jpg">
+				<div class="layer">
+					<h3>Video Animation</h3>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </P>
+					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+
+			</div>
+			<div class="work">
+				<img src="img/Anh san pham/02.jpg">
+				<div class="layer">
+					<h3>Leaflet</h3>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </P>
+					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="img/Anh san pham/03.jpg">
+				<div class="layer">
+					<h3>Photo of Bat Trang pottery village</h3>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </P>
+					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="img/Anh san pham/04.jpg">
+				<div class="layer">
+					<h3>Magazine</h3>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </P>
+					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="img/Anh san pham/05.jpg">
+				<div class="layer">
+					<h3>Product photos</h3>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </P>
+					<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<a href="#" class="button">See more</a>
+		</div>
+	</div>
+
+	<!-------------------------Contact-->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<P><i class="fa-solid fa-paper-plane"></i>khaidv2k2@gmail.com</P>
+					<P><i class="fa-solid fa-square-phone"></i>0989628730</P>
+					<div class="social-icon">
+						<a href="https://www.facebook.com/profile.php?id=100010907132545"><i
+								class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=100010907132545"><i
+								class="fa-brands fa-square-behance"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=100010907132545"><i
+								class="fa-brands fa-instagram"></i></a>
+					</div>
+					<a href="img/mycv.pdf.pdf" download class="button button2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form>
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="button button2">Submit</button>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
