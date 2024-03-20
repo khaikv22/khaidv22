@@ -42,6 +42,12 @@ html {
     }
 }
 
+
+.text_2 {
+    text-shadow: #020c19;
+    text-decoration: solid;
+}
+
 .topnav a {
     float: left;
     display: block;
@@ -97,7 +103,7 @@ html {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-    color: #0099ff;
+    color: #008fef;
 
     transition: 1s all ease-in-out;
 }
@@ -110,7 +116,7 @@ html {
         background-image: url(./img/anh_intro.png) !important;
         background-repeat: no-repeat;
         background-color: white;
-        background-position: bottom -70px center;
+        background-position: bottom -130px center;
         background-image: inherit;
         color: #171717;
         display: flex;
@@ -154,7 +160,7 @@ html {
 
                 .text_1 {
                     font-size: 20px;
-                    border: 1px solid #171717;
+                    border: 2px solid #171717;
                     border-radius: 39px;
                     padding: 4px 25px;
                 }
@@ -165,6 +171,12 @@ html {
                     font-size: 50px;
                 }
 
+                .text_2 span {
+                    color: #005eda;
+                    stroke: #86cfff;
+                    
+
+                }
             }
 
             .exp {
@@ -281,7 +293,7 @@ html {
     transform: scale(1.1);
 }
 
-.main .main-detil {
+/* .main .main-detil {
     text-align: center;
     color: #ffffff;
     justify-content: center;
@@ -300,9 +312,9 @@ html {
 .main .main-detil h4 {
     font-size: 15px;
     margin-bottom: 20px;
-}
+} */
 
-
+/* <-------------------Aboutme----------> */
 #about {
     padding: 0px 0px;
     color: rgb(255, 255, 255)
@@ -320,18 +332,19 @@ html {
 
 .about-col-1 img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 16px;
 
 }
 
 .about-col-2 {
-    flex-basis: 60%;
+    flex-basis: 65%;
 }
 
 .sub-title {
-    font-size: 38px;
-    font-weight: 600;
-    color: #fff;
+    font-size: 40px;
+    font-weight: 620;
+    color: #0089e4;
+    margin-bottom: 25px;
 }
 
 
