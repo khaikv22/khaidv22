@@ -11,8 +11,7 @@
 body {
     opacity: 0;
     transition: opacity 3s;
-    background-color: #030414
-;
+    background-color: #030414;
 
 }
 
@@ -27,6 +26,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 .topnav {
     background-color: #020c19;
     display: flex;
@@ -34,6 +34,7 @@ html {
     z-index: 9999;
     width: 100%;
     padding: 0 10%;
+
     .logo {
         display: flex;
         align-items: center;
@@ -95,7 +96,7 @@ html {
 }
 
 .topnav a:hover,
-.dropdown:hover .dropbtn{
+.dropdown:hover .dropbtn {
     color: #0099ff;
 
     transition: 1s all ease-in-out;
@@ -200,7 +201,7 @@ html {
                         font-size: 42px;
                     }
 
-                   
+
                 }
 
             }
@@ -235,11 +236,12 @@ html {
                     border-radius: 60px;
                     color: #fff;
                     cursor: pointer;
-                    
+
 
                     .text {
                         padding-right: 5px;
                     }
+
                     .btn-left:hover {
                         color: #003070;
                     }
@@ -393,6 +395,7 @@ html {
 #imgtopping {
     margin-top: 160px;
 }
+
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -446,6 +449,7 @@ html {
 .container {
     padding: 0 10%;
     margin-top: 160px;
+
     .btn-button {
         display: flex;
         flex-direction: row;
@@ -453,13 +457,14 @@ html {
         padding-top: 20px;
     }
 }
+
 .work-list {
     /* display: grid; */
     /* grid-template-columns: repeat(3, 1fr); */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap:  40px 0;
+    gap: 40px 0;
     margin-top: 50px;
     justify-content: space-around;
 
@@ -577,43 +582,41 @@ html {
 .button:hover {
     transform: scale(1.05);
     border-color: #fff9;
-  }
-  
-  
-  .button:hover::before {
+}
+
+
+.button:hover::before {
     animation: shine 1.5s ease-out infinite;
-  }
-  
-  .button::before {
+}
+
+.button::before {
     content: "";
     position: absolute;
     width: 100px;
     height: 100%;
-    background-image: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 30%,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0) 70%
-    );
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
     top: 0;
     left: -100px;
     opacity: 0.6;
-  }
-  
-  @keyframes shine {
+}
+
+@keyframes shine {
     0% {
-      left: -100px;
+        left: -100px;
     }
-  
+
     60% {
-      left: 100%;
+        left: 100%;
     }
-  
+
     to {
-      left: 100%;
+        left: 100%;
     }
-  }
-  
+}
+
 
 /*-----------------------contact--------------*/
 
@@ -720,7 +723,7 @@ link .fas {
 @media screen and (max-width: 676px) {
     .nav {
         position: absolute;
-       
+
         background-color: black;
         top: 50px;
         right: 0px;
@@ -762,20 +765,23 @@ link .fas {
     .exp {
         display: none !important;
     }
+
     .main {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media (min-width: 577px ) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
     .work {
         /* width: 40%; */
         box-sizing: border-box;
     }
+
     .work-list {
-        gap:  20px 0;
+        gap: 20px 0;
     }
+
     .link {
         display: none !important;
     }
@@ -815,10 +821,11 @@ link .fas {
 
 }
 
-@media  (min-width: 767px ) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
     .work-list {
-        gap:  20px 0;
+        gap: 20px 0;
     }
+
     .main {
         display: flex;
         flex-direction: column;
@@ -831,3 +838,31 @@ link .fas {
     }
 }
 
+
+/*==================== FOOTER ====================*/
+.footer {
+    padding-top: 60px;
+    /* margin-bottom: 50px; */
+    background-color: #020c19;
+    padding: 40px;
+
+}
+
+
+.footer__title {
+
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+.footer__copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+}
