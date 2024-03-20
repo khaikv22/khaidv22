@@ -707,7 +707,7 @@ link .fas {
     display: none;
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 850px) {
 
     .topnav a,
     .dropdown .dropbtn {
@@ -761,7 +761,7 @@ link .fas {
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 850px) {
     .exp {
         display: none !important;
     }
@@ -772,7 +772,7 @@ link .fas {
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 850px) {
     .work {
         /* width: 40%; */
         box-sizing: border-box;
@@ -821,7 +821,7 @@ link .fas {
 
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 850px) and (max-width: 1024px) {
     .work-list {
         gap: 20px 0;
     }
