@@ -96,7 +96,8 @@ html {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn{
-    color: red;
+    color: #0099ff;
+
     transition: 1s all ease-in-out;
 }
 
@@ -349,7 +350,7 @@ html {
     content: '';
     width: 0;
     height: 3px;
-    background: #e60049;
+    background: #0099ff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -359,7 +360,7 @@ html {
 
 
 .tab-titles p:hover {
-    color: #e60049;
+    color: #0099ff;
 
 }
 
@@ -373,7 +374,7 @@ html {
 }
 
 .tab-contents ul li span {
-    color: #e60049;
+    color: #0099ff;
     font-size: 14px;
 }
 
@@ -528,21 +529,91 @@ html {
 }
 
 .button {
-    display: block;
+    /* display: block;
     margin: 10px;
     width: fit-content;
-    border: 1px solid #b30039;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
-    text-align: center;
+    text-align: center; */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 12px;
+    padding-inline: 48px;
+    background-color: #0068ae;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 16px;
 }
 
 .button:hover {
-    background: #ff004f;
-}
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
 
 /*-----------------------contact--------------*/
 
@@ -564,7 +635,7 @@ html {
 }
 
 .contact-left p i {
-    color: #ff004f;
+    color: #0099ff;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -583,13 +654,12 @@ html {
 }
 
 .social-icon a:hover {
-    color: #ff004f;
+    color: #0068ae;
     transform: translateY(-5px);
 }
 
 .button.button2 {
     display: inline-block;
-    background: #ff004f;
     margin: 0;
     margin-top: 20px;
     margin-bottom: 80px;
@@ -613,7 +683,7 @@ form textarea {
 }
 
 form button.button2 {
-    padding: 14px 60px;
+    padding: 12px 48px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
@@ -760,3 +830,4 @@ link .fas {
 
     }
 }
+
