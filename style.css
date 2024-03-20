@@ -11,7 +11,8 @@
 body {
     opacity: 0;
     transition: opacity 3s;
-    background-color: black;
+    background-color: #030414
+;
 
 }
 
@@ -27,7 +28,7 @@ html {
     scroll-behavior: smooth;
 }
 .topnav {
-    background-color: #121111;
+    background-color: #020c19;
     display: flex;
     position: fixed;
     z-index: 9999;
@@ -233,6 +234,7 @@ html {
                     border-radius: 60px;
                     color: #fff;
                     cursor: pointer;
+                    
 
                     .text {
                         padding-right: 5px;
@@ -386,8 +388,10 @@ html {
 
 
 
-
-
+/* <-----------------serices----------!> */
+#imgtopping {
+    margin-top: 160px;
+}
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -396,10 +400,10 @@ html {
 }
 
 .services-list div {
-    background: #262626;
+    background: #39373782;
     padding: 40px;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     border-right: 10px;
     transition: background 0.5s, transform 0.5s;
     border-radius: 30px;
@@ -415,7 +419,7 @@ html {
 
 .services-list div h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 650;
     margin-bottom: 15px;
 }
 
@@ -428,8 +432,11 @@ html {
 }
 
 .services-list div:hover {
-    background: #e60049;
+
+    background: linear-gradient(#3b3b3b41, #003070);
     transform: translateY(-10px);
+    border: #D0D5DD;
+    stroke: #fff;
 
 }
 
@@ -476,7 +483,7 @@ html {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    background: linear-gradient(#00000066, #003070);
     border-radius: 10px;
     position: absolute;
     left: 0;
